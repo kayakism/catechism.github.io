@@ -1,0 +1,124 @@
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-image: url("img/sky_tile.gif");
+      background-size: 180px;
+      margin: 0;
+      padding: 0;
+      font-family: "Times New Roman", Times, serif;
+      overflow: scroll;
+    }
+
+    #content::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hiding scrollbar for IE, Edge and Firefox */
+    #content {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+    }
+
+    .marqueetop {
+      font-family: 'Courier New', monospace;
+    }
+
+    .hide {
+      display: none;
+    }
+
+
+    .musichovertext:hover+.hide {
+      display: block;
+      color: #b61010;
+    }
+
+    p {
+      background-color: #f9e2ae;
+      display: inline-block;
+      box-sizing: border-box;
+      font-size: 0.9em;
+      border-color: #f7dc9f;
+      border-style: outset;
+      margin: auto;
+      padding: 0.4em;
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #clippy {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .navpanel {
+      background-color: lightgrey;
+      display: inline-block;
+      box-sizing: border-box;
+      font-size: 0.9em;
+      border-color: #cacaca;
+      border-style: outset;
+      margin: auto;
+      padding: 0.9em;
+    }
+
+
+    .titleascii {
+      font-size: max(0.1rem, 0.8vmin);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .europefeed {
+      text-align: center;
+    }
+
+    .mleft,
+    .mright {
+      height: 504px;
+      width: 120px;
+      text-align: center;
+      border: none;
+    }
+
+    .mleft {
+      float: left;
+    }
+
+    .mright {
+      float: right;
+    }
+
+    .navpanel {
+      font-size: 12px;
+      padding: 0;
+      text-align: center;
+    }
+
+    .mcenter {
+      border: none;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 30%;
+      justify-content: center;
+    }
+
+    .footer {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 5px;
+      bottom: 0;
+    }

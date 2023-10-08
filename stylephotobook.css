@@ -1,0 +1,52 @@
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-image: url("img/sky_tile.gif");
+      background-size: 180px;
+      font-family: "Times New Roman", Times, serif;
+      overflow: scroll;
+    }
+
+    .homenav {
+      padding-left: 8px;
+      padding-top: 8px;
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+
+    .gallery img:hover {
+      border: 3px solid #00ff00;
+    }
+
+    .gallery {
+      padding: 5px;
+      float: left;
+    }
+
+    .gallery img {
+      width: auto;
+      height: 150px;
+      border: 2px solid #d13680;
+      box-sizing: border-box;
+    }
+
+    .desc {
+      padding: 1px;
+      text-align: center;
+    }
+
+  .instruct {
+    text-align: center;
+  }
+  .mcenter {
+    width: 80%;
+    margin: 0px auto 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
