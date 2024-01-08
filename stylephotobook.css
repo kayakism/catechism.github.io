@@ -4,8 +4,31 @@
       width: 100%;
       background-image: url("img/sky_tile.gif");
       background-size: 180px;
-      font-family: "Times New Roman", Times, serif;
-      overflow: scroll;
+      font-family: monospace;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .example::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hiding scrollbar for IE, Edge and Firefox */
+    #content {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+    }
+
+    .stickygif {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 99999;
+      cursor: pointer;
+      transition: transform 2s;
     }
 
     .homenav {
@@ -16,6 +39,17 @@
       position: sticky;
       top: 0;
       left: 0;
+    }
+
+    .yellowbox {
+      background-color: #fde2a7;
+      display: inline-block;
+      box-sizing: border-box;
+      border-color: rgb(255, 237, 178);
+      border-style: outset;
+      padding-right: 11px;
+      padding-left: 11px;
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
     }
 
     .gallery img:hover {
@@ -39,14 +73,15 @@
       text-align: center;
     }
 
-  .instruct {
-    text-align: center;
-  }
-  .mcenter {
-    width: 80%;
-    margin: 0px auto 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+    .instruct {
+      text-align: center;
+    }
+
+    .mcenter {
+      width: 80%;
+      margin: 0px auto 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }

@@ -1,124 +1,128 @@
-    html,
-    body {
-      height: 100%;
-      width: 100%;
-      background-image: url("img/sky_tile.gif");
-      background-size: 180px;
-      margin: 0;
-      padding: 0;
-      font-family: "Times New Roman", Times, serif;
-      overflow: scroll;
-    }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/sky_tile.gif");
+  background-size: 180px;
+  font-family: monospace;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
-    #content::-webkit-scrollbar {
-      display: none;
-    }
+.example::-webkit-scrollbar {
+  display: none;
+}
 
-    /* Hiding scrollbar for IE, Edge and Firefox */
-    #content {
-      scrollbar-width: none;
-      /* Firefox */
-      -ms-overflow-style: none;
-      /* IE and Edge */
-    }
+#content {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
 
-    .marqueetop {
-      font-family: 'Courier New', monospace;
-    }
+.mleft,
+.mright {
+  height: 504px;
+  width: 120px;
+  text-align: center;
+  border: none;
+}
 
-    .hide {
-      display: none;
-    }
+.yellowbox {
+  background-color: #fde2a7;
+  display: inline-block;
+  box-sizing: border-box;
+  border-color: rgb(255, 237, 178);
+  border-style: outset;
+  padding-right: 11px;
+  padding-left: 11px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
 
+.navpanel {
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+}
 
-    .musichovertext:hover+.hide {
-      display: block;
-      color: #b61010;
-    }
+.mleft img {
+  max-width: 70px;
+}
 
-    p {
-      background-color: #f9e2ae;
-      display: inline-block;
-      box-sizing: border-box;
-      font-size: 0.9em;
-      border-color: #f7dc9f;
-      border-style: outset;
-      margin: auto;
-      padding: 0.4em;
-      box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
-    }
+.mleft {
+  float: left;
+}
 
-    #clippy {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-    }
+.hide {
+  display: none;
+}
 
-    .container {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-    }
+.musichovertext:hover+.hide {
+  display: block;
+  color: #b61010;
+}
 
-    .navpanel {
-      background-color: lightgrey;
-      display: inline-block;
-      box-sizing: border-box;
-      font-size: 0.9em;
-      border-color: #cacaca;
-      border-style: outset;
-      margin: auto;
-      padding: 0.9em;
-    }
+/* PAGE-SPECIFIC CODE */
+.marqueetop {
+  font-family: 'Courier New', monospace;
+}
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 
-    .titleascii {
-      font-size: max(0.1rem, 0.8vmin);
-      margin-left: auto;
-      margin-right: auto;
-    }
+.stickygif {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99999;
+  cursor: pointer;
+  transition: transform 2s;
+}
 
-    .europefeed {
-      text-align: center;
-    }
+.navpanel {
+  background-color: lightgrey;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  border-color: #cacaca;
+  border-style: outset;
+  margin: auto;
+  padding: 0.9em;
+}
 
-    .mleft,
-    .mright {
-      height: 504px;
-      width: 120px;
-      text-align: center;
-      border: none;
-    }
+.titleascii {
+  font-size: max(0.1rem, 0.8vmin);
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .mleft {
-      float: left;
-    }
+.europefeed {
+  text-align: center;
+}
 
-    .mright {
-      float: right;
-    }
+.mright {
+  float: right;
+}
 
-    .navpanel {
-      font-size: 12px;
-      padding: 0;
-      text-align: center;
-    }
+.mcenter {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+  justify-content: center;
+}
 
-    .mcenter {
-      border: none;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 30%;
-      justify-content: center;
-    }
-
-    .footer {
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0;
-      padding: 5px;
-      bottom: 0;
-    }
+.footer {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 5px;
+  bottom: 0;
+}
