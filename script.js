@@ -1,5 +1,5 @@
 function sound() {
-  var snd = new Audio('img/flowersneverbend.mp3')
+  var snd = new Audio('https://raw.githubusercontent.com/kayakism/catechism.github.io/main/flowersneverbend.mp3')
   snd.play()
 }
 
