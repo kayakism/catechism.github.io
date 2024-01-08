@@ -5,7 +5,7 @@
       background-image: url("https://s13.gifyu.com/images/S0zdw.gif");
       background-size: 180px;
       font-family: monospace;
-      overflow-y: scroll;
+      overflow-y: auto;
       overflow-x: hidden;
     }
 

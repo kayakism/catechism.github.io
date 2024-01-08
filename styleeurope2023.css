@@ -7,7 +7,7 @@ body {
   background-image: url("https://s13.gifyu.com/images/S0zdw.gif");
   background-size: 180px;
   font-family: monospace;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -77,6 +77,7 @@ body {
 
 .stickygif {
   position: absolute;
+  padding-right: 10px;
   bottom: 10px;
   right: 10px;
   z-index: 99999;
@@ -99,6 +100,7 @@ body {
   font-size: max(0.1rem, 0.8vmin);
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .europefeed {
@@ -113,16 +115,27 @@ body {
   border: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 30%;
+  max-width: 50%;
   justify-content: center;
 }
 
 .footer {
   text-align: center;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   margin: 0;
   padding: 5px;
   bottom: 0;
+}
+
+.yellowbox {
+  background-color: #fde2a7;
+  display: inline-block;
+  box-sizing: border-box;
+  border-color: rgb(255, 237, 178);
+  border-style: outset;
+  padding-right: 11px;
+  padding-left: 11px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
